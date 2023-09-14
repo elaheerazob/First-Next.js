@@ -8,13 +8,15 @@ const page = () => {
     const route = useRouter();
     return (
         <div>
-            <h1>About</h1>
+            {/* <h1>About</h1>
             <button onClick={()=>route.push("/")}>Home</button>
 
             <br/>
 
           <Link href="/about/aboutCollage">Go to AboutCollage</Link><br /> <br />
-          <Link href="/about/aboutStudents">Go to AboutStudents</Link>
+          <Link href="/about/aboutStudents">Go to AboutStudents</Link> */}
+
+          <h1 className='header'>This is About Page</h1>
         </div>
     );
 };
