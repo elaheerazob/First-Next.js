@@ -16,6 +16,7 @@ export default function Home() {
 <button onClick={()=>nevation("/login")}>Login</button>
 <button onClick={()=>nevation("/about")}>About</button>
 <Link  href="/about" >About</Link>
+<Link href="/productlist">Product List</Link>
     </main>
   )
 }
