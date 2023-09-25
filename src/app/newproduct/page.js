@@ -1,3 +1,5 @@
+import Productbtn from "./productbtn";
+
 async function newproduct() {
     let data = await fetch("https://dummyjson.com/products")
     data = await data.json();
@@ -15,7 +17,8 @@ export default async function page() {
                     <div>
                         <h1>Name :{items.title}</h1>
                         <h1>Pice :{items.price}</h1>
-                        <img src={items.thumbnail} alt="" />
+                        {/* <img src={items.thumbnail} alt="" /> */}
+                        <Productbtn price={items.price}/>
                     </div>
                 ))
             }
