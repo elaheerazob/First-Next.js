@@ -13,7 +13,7 @@ export default async function Page(){
         <div>
             {
                 products.map((item)=>(
-                    <div>
+                    <div key={item.id}>
                         <h1>Name: {item.title}</h1>
                     </div>
                 ))

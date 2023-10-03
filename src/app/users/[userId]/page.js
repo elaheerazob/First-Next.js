@@ -14,3 +14,11 @@ export default async function page(props){
         </div>
     )
 }
+
+export async function generateStaticParams(){
+    const userList = getUsers();
+    const users = await userList;
+    return users.map(user=>({
+        userId:user.id.toString()
+    }))
+}
